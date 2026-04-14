@@ -12,6 +12,9 @@
   --radius-lg: 22px;
   --radius-md: 16px;
   --content-width: 1280px;
+  --header-gap: 8px;
+  --scroll-offset-mobile: 76px;
+  --scroll-offset-desktop: 96px;
 }
 
 * {
@@ -135,7 +138,8 @@ img {
 }
 
 .section {
-  padding: 52px 0;
+  padding: var(--header-gap) 0 52px;
+  scroll-margin-top: calc(var(--scroll-offset-mobile) + var(--header-gap));
 }
 
 .hero {
@@ -144,7 +148,11 @@ img {
   gap: 18px;
   align-items: stretch;
   min-height: auto;
-  padding-top: 18px;
+  padding-top: 0;
+}
+
+.hero.section {
+  padding-top: 0;
 }
 
 .hero-intro,
@@ -682,7 +690,8 @@ h3 {
   }
 
   .section {
-    padding: 56px 0;
+    padding: var(--header-gap) 0 56px;
+    scroll-margin-top: calc(var(--scroll-offset-desktop) + var(--header-gap));
   }
 
   .hero-image-wrap {
