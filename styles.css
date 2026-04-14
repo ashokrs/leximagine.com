@@ -152,7 +152,7 @@ img {
 }
 
 .hero.section {
-  padding-top: 0;
+  padding-top: var(--header-gap);
 }
 
 .hero-intro,
@@ -558,7 +558,7 @@ h3 {
 }
 
 .editorial-section {
-  padding-top: 54px;
+  padding-top: var(--header-gap);
 }
 
 .section-heading {
