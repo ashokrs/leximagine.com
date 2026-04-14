@@ -1,0 +1,3 @@
+dig leximagine.com +noall +answer -t A
+dig leximagine.com +noall +answer -t AAAA
+dig www.leximagine.com +noall +answer -t CNAME
