@@ -8,7 +8,6 @@
       name="description"
       content="LexImagine showcases Tickster Pet Scan, a modern mobile app that helps dog owners scan for ticks with calm, close-range guidance."
     />
-    <link rel="canonical" href="https://leximagine.com/" />
     <link rel="icon" type="image/png" href="./i/favicon.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
