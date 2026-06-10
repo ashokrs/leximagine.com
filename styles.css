@@ -479,9 +479,10 @@ h3 {
 .hero-bubble {
   position: absolute;
   left: 14px;
-  right: auto;
+  right: 14px;
   bottom: 16px;
-  width: min(calc(100% - 28px), 264px);
+  width: auto;
+  max-width: none;
   padding: 12px 13px 11px;
   border: 1.5px solid rgba(220, 122, 156, 0.55);
   border-radius: 22px 22px 22px 14px;
@@ -554,6 +555,8 @@ h3 {
   font-size: 0.9rem;
   letter-spacing: -0.03em;
   color: #7b2d4a;
+  max-width: 100%;
+  overflow-wrap: break-word;
 }
 
 .editorial-section {
@@ -770,6 +773,7 @@ h3 {
     right: 32px;
     bottom: 10px;
     width: min(calc(100% - 48px), 264px);
+    max-width: none;
   }
 
   .dog-watch-stack {
