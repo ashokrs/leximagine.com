@@ -471,6 +471,19 @@ h3 {
   fill: url(#storeIconGradient);
 }
 
+/* Google Play mark: official artwork used as a mask so the brand gradient
+   shows through it, matching the Apple glyph beside it. */
+.store-glyph-play {
+  display: block;
+  /* 20% larger than the 22px Apple glyph: the Play mark is a wide, gapped
+     triangle, so it reads smaller at matched dimensions. */
+  width: 26.4px;
+  height: 26.4px;
+  background: linear-gradient(135deg, #cb537f, #e28a66);
+  -webkit-mask: url('i/google-play-mask.png') no-repeat center / contain;
+  mask: url('i/google-play-mask.png') no-repeat center / contain;
+}
+
 .hero-image-wrap {
   position: relative;
   min-height: 380px;
