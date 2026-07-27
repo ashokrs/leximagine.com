@@ -84,6 +84,7 @@ Scan records are associated with your account and the selected dog. Snapshot sav
 - [FAQ](https://leximagine.com/#faq): Answers on downloading, scanning technique, on-device processing, offline use, subscriptions, and data handling.
 - [Support](https://leximagine.com/support/): How to contact LexImagine support and what details to include.
 - [Privacy Policy](https://leximagine.com/privacy/): What Tickster collects, camera/location/photo use, sharing, security, retention, and user choices.
+- [Terms of Use](https://leximagine.com/terms/): End user terms, subscription and billing terms, acceptable use, disclaimers, and the Apple Standard EULA that applies to App Store users.
 - [Delete Account](https://leximagine.com/delete-account/): How to request account deactivation or deletion of selected Tickster data, what is deleted, and timing.
 
 ## Citation

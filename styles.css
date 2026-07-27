@@ -214,12 +214,26 @@ h3 {
 .panel-text,
 .section-heading p,
 .content-card p,
+.content-card li,
 .process-card p,
 .cta-copy p,
 .contact-note {
   color: var(--muted);
   line-height: 1.75;
   font-size: 1rem;
+}
+
+.content-card ul {
+  margin: 0 0 14px;
+  padding-left: 22px;
+}
+
+.content-card li {
+  margin-bottom: 8px;
+}
+
+.content-card li::marker {
+  color: var(--accent-strong);
 }
 
 .hero-actions,
@@ -968,5 +982,27 @@ h3 {
 
   .faq-answer {
     animation: none;
+  }
+}
+
+/* Seven nav tabs need to stay on one line on narrower desktops. */
+@media (min-width: 761px) {
+  .nav-link {
+    white-space: nowrap;
+  }
+}
+
+@media (min-width: 761px) and (max-width: 1024px) {
+  .site-header {
+    gap: 12px;
+    padding: 18px 20px;
+  }
+
+  .site-nav {
+    gap: 15px;
+  }
+
+  .nav-link {
+    font-size: 0.86rem;
   }
 }
