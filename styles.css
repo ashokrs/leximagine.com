@@ -1018,16 +1018,18 @@ h3 {
   box-shadow: 0 4px 10px rgba(88, 59, 67, 0.16);
 }
 
-/* The download CTA reuses the hero's store-link structure and sizing. */
-.cta-store-links {
+/* Every store-link group shares the hero's width, so they all match. */
+.cta-store-links,
+.panel-store-links-secondary {
   width: min(100%, 304px);
 }
 
-/* Centre the hero call-to-action stack and the CTA store links on phones. */
+/* Centre the hero call-to-action stack and every store-link group on phones. */
 @media (max-width: 760px) {
   .hero-intro .hero-actions,
   .hero-intro .hero-store-links,
-  .cta-store-links {
+  .cta-store-links,
+  .panel-store-links-secondary {
     margin-inline: auto;
   }
 
