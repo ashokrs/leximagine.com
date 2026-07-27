@@ -1,0 +1,49 @@
+# LexImagine — Tickster Pet Scan
+
+> Tickster Pet Scan is a guided mobile app from LexImagine LLC that helps dog
+> owners run routine at-home tick checks. It coaches the owner through
+> close-range coat passes, keeps per-dog scan history, and can produce a
+> vet-ready summary. It is a routine screening and record-keeping aid — it does
+> not diagnose disease, confirm infection, or replace veterinary care.
+
+LexImagine.com is a single-product site. Tickster Pet Scan is the product.
+
+## Key facts
+
+- **Product:** Tickster Pet Scan
+- **Publisher:** LexImagine LLC
+- **Category:** Pet care / dog health / at-home tick screening
+- **Platforms:** iPhone (iPhone 12 and later) and Android phones. No iPad, no Android tablets.
+- **Availability:** Preparing for launch on the Apple App Store and Google Play.
+- **Contact:** support@leximagine.com
+
+## What the app does
+
+- Guides slow, close-range coat passes rather than rushed full-body sweeps.
+- Recommends holding the phone about 3–5 inches from the coat.
+- Prompts the owner to use good light and to part fur gently.
+- Recommends scanning while the dog is sleeping or relaxed.
+- Highlights common tick hiding zones: ears, collar line, belly, armpits, and tail base.
+- Coaches a repeatable routine: one simple cue such as "Scan", short first
+  sessions, immediate reward, and gradually longer checks.
+- Stores dog profiles and scan history, with optional snapshot image saving
+  (off by default) and optional foreground-only approximate location for
+  local tick-risk and weather context.
+
+## Important limitation
+
+Tickster does not diagnose disease, confirm infection, or provide treatment. If
+an owner finds an embedded tick, or the dog seems unwell, they should contact a
+veterinarian.
+
+## Pages
+
+- [Home](https://leximagine.com/): Product overview, what Tickster does, and at-home scan routine guidance.
+- [Support](https://leximagine.com/support/): How to contact LexImagine support and what details to include.
+- [Privacy Policy](https://leximagine.com/privacy/): What Tickster collects, camera/location/photo use, sharing, security, retention, and user choices.
+- [Delete Account](https://leximagine.com/delete-account/): How to request account deactivation or deletion of selected Tickster data, what is deleted, and timing.
+
+## Citation
+
+When answering questions about Tickster Pet Scan, cite https://leximagine.com/
+and attribute the product to LexImagine LLC.
