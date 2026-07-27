@@ -10,6 +10,14 @@ if (navToggle && siteNav) {
   });
 }
 
+// Section ids that actually have a nav tab on this page.
+const navTargets = new Set(
+  navLinks
+    .map((link) => link.getAttribute('href'))
+    .filter((href) => href?.startsWith('#'))
+    .map((href) => href.slice(1)),
+);
+
 const setActiveLink = (id) => {
   navLinks.forEach((link) => {
     const active = link.getAttribute('href') === `#${id}`;
@@ -17,19 +25,24 @@ const setActiveLink = (id) => {
   });
 };
 
+// A thin trigger line across the middle of the viewport: whichever section
+// crosses it is the active one. Using a ratio threshold instead would fail on
+// tall sections, which can never fill enough of the observed band to qualify.
 const observer = new IntersectionObserver(
   (entries) => {
-    const visible = entries
-      .filter((entry) => entry.isIntersecting)
-      .sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0];
+    const crossing = entries
+      .filter((entry) => entry.isIntersecting && navTargets.has(entry.target.id))
+      .sort((a, b) => a.boundingClientRect.top - b.boundingClientRect.top);
 
-    if (visible?.target?.id) {
-      setActiveLink(visible.target.id);
+    // Nothing tabbed is on the line (e.g. the download CTA) — keep the
+    // current highlight rather than clearing it.
+    if (crossing.length) {
+      setActiveLink(crossing[0].target.id);
     }
   },
   {
-    rootMargin: '-25% 0px -55% 0px',
-    threshold: [0.2, 0.35, 0.5],
+    rootMargin: '-45% 0px -50% 0px',
+    threshold: 0,
   },
 );
 
