@@ -1006,3 +1006,33 @@ h3 {
     font-size: 0.86rem;
   }
 }
+
+/* Tickster app icon on the trailing edge of every store link, so people can
+   see at a glance which app they are downloading. */
+.store-app-icon {
+  flex: 0 0 auto;
+  margin-left: auto;
+  width: 34px;
+  height: 34px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(88, 59, 67, 0.16);
+}
+
+/* The download CTA reuses the hero's store-link structure and sizing. */
+.cta-store-links {
+  width: min(100%, 304px);
+}
+
+/* Centre the hero call-to-action stack and the CTA store links on phones. */
+@media (max-width: 760px) {
+  .hero-intro .hero-actions,
+  .hero-intro .hero-store-links,
+  .cta-store-links {
+    margin-inline: auto;
+  }
+
+  .cta-section {
+    justify-items: center;
+    text-align: center;
+  }
+}
