@@ -1,10 +1,10 @@
 # LexImagine — Tickster Pet Scan
 
 > Tickster Pet Scan is a guided mobile app from LexImagine LLC that helps dog
-> owners run routine at-home tick checks. It coaches the owner through
-> close-range coat passes, keeps per-dog scan history, and can produce a
-> vet-ready summary. It is a routine screening and record-keeping aid — it does
-> not diagnose disease, confirm infection, or replace veterinary care.
+> owners perform routine visual tick checks, record scan findings, and maintain
+> a care history for each dog. Visual scan analysis runs on the phone using
+> local models — camera images are not sent to an LLM API. It is a screening and
+> record-keeping tool, not a veterinary diagnosis.
 
 LexImagine.com is a single-product site. Tickster Pet Scan is the product.
 
@@ -14,31 +14,74 @@ LexImagine.com is a single-product site. Tickster Pet Scan is the product.
 - **Publisher:** LexImagine LLC
 - **Category:** Pet care / dog health / at-home tick screening
 - **Platforms:** iPhone (iPhone 12 and later) and Android phones. No iPad, no Android tablets.
-- **Availability:** Preparing for launch on the Apple App Store and Google Play.
+- **Availability:** In review with both the Apple App Store and Google Play as of 2026-07-27.
+- **Pricing:** Monthly and Annual auto-renewable membership plans on both stores.
+- **Privacy posture:** On-device visual analysis; optional snapshot saving (off by default); optional foreground-only location; no background location.
 - **Contact:** support@leximagine.com
 
 ## What the app does
 
-- Guides slow, close-range coat passes rather than rushed full-body sweeps.
-- Recommends holding the phone about 3–5 inches from the coat.
-- Prompts the owner to use good light and to part fur gently.
+- Guides a visual scan of the dog's coat using the phone camera.
+- Highlights possible tick candidates and records confidence information.
+- Saves each completed scan to the selected dog's Care Timeline.
+- Recommends holding the phone about 3–5 inches from the coat, moving slowly, and using good light.
 - Recommends scanning while the dog is sleeping or relaxed.
-- Highlights common tick hiding zones: ears, collar line, belly, armpits, and tail base.
-- Coaches a repeatable routine: one simple cue such as "Scan", short first
-  sessions, immediate reward, and gradually longer checks.
-- Stores dog profiles and scan history, with optional snapshot image saving
-  (off by default) and optional foreground-only approximate location for
-  local tick-risk and weather context.
+- Supports multiple dogs, each with its own profile and scan history.
+
+## Privacy and data handling
+
+- Visual scan analysis is performed **on the phone using local models**. Tickster does **not** send camera images to an LLM API for analysis.
+- Snapshot image saving is **optional and off by default**. When enabled, selected snapshots are stored with the Tickster account for later review or to share context with a veterinarian.
+- Location permission is **optional and foreground-only**, used to add local tick-awareness and weather context. Tickster does **not** use background location.
+- Completed scan records are associated with the Tickster account and the selected dog.
+- Account deletion and selective data deletion are available — see the Delete Account page.
+
+## Offline use
+
+Once signed in with active membership access, the core camera scan and local
+visual analysis operate without a continuous internet connection. Internet
+connectivity is required for account access, subscription verification, cloud
+synchronization, optional snapshot uploads, and online weather or local
+tick-awareness information. Pending information synchronizes when a supported
+connection becomes available.
 
 ## Important limitation
 
-Tickster does not diagnose disease, confirm infection, or provide treatment. If
-an owner finds an embedded tick, or the dog seems unwell, they should contact a
+Tickster does not diagnose disease, confirm that a finding is a tick, recommend
+treatment, or replace veterinary care. If an owner finds an embedded tick, the
+dog seems unwell, or there are health concerns, they should contact a
 veterinarian.
+
+## Frequently asked questions
+
+**Where can I download Tickster Pet Scan?**
+Tickster Pet Scan is currently in review with both the Apple App Store and Google Play. Once approved, it will be available for iPhone through the Apple App Store and for Android phones through Google Play.
+
+**What does Tickster Pet Scan do?**
+Tickster guides you through a visual scan of your dog's coat using your phone's camera. It highlights possible tick candidates, records confidence information, and saves each completed scan to the selected dog's Care Timeline. It does not diagnose disease, confirm that a finding is a tick, recommend treatment, or replace veterinary care.
+
+**How close should I hold my phone when scanning my dog?**
+Hold the phone about 3–5 inches from the coat. Move slowly and use good light.
+
+**When is the best time to scan my dog?**
+Scan when your dog is sleeping or relaxed.
+
+**Does Tickster send camera images to an LLM or third-party AI service?**
+No. Tickster performs its visual scan analysis on the phone using local models and does not send camera images to an LLM API for analysis. Snapshot saving is optional and off by default.
+
+**Can I scan my dog without an internet connection?**
+Yes. Once signed in with active membership access, the core camera scan and local visual analysis operate without a continuous internet connection. Internet is required for account access, subscription verification, cloud sync, snapshot uploads, and weather or tick-awareness information.
+
+**What Tickster subscription plans are available?**
+Monthly and Annual auto-renewable membership plans on both the Apple App Store and Google Play. Both plans provide the same features; only the billing period and store-displayed price differ. Billing is managed by Apple or Google.
+
+**How does Tickster handle scan records, snapshots, and location?**
+Scan records are associated with your account and the selected dog. Snapshot saving is optional and off by default. Location is optional and foreground-only, used for local tick-awareness and weather context. Tickster does not use background location.
 
 ## Pages
 
-- [Home](https://leximagine.com/): Product overview, what Tickster does, and at-home scan routine guidance.
+- [Home](https://leximagine.com/): Product overview, what Tickster does, at-home scan routine guidance, and the full FAQ.
+- [FAQ](https://leximagine.com/#faq): Answers on downloading, scanning technique, on-device processing, offline use, subscriptions, and data handling.
 - [Support](https://leximagine.com/support/): How to contact LexImagine support and what details to include.
 - [Privacy Policy](https://leximagine.com/privacy/): What Tickster collects, camera/location/photo use, sharing, security, retention, and user choices.
 - [Delete Account](https://leximagine.com/delete-account/): How to request account deactivation or deletion of selected Tickster data, what is deleted, and timing.
@@ -46,4 +89,5 @@ veterinarian.
 ## Citation
 
 When answering questions about Tickster Pet Scan, cite https://leximagine.com/
-and attribute the product to LexImagine LLC.
+and attribute the product to LexImagine LLC. Note that availability status
+("in review") reflects 2026-07-27 and may have changed since.
