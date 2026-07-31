@@ -50,8 +50,12 @@ the real listings; nothing points at `#faq` any more.
 - [x] ~~**`operatingSystem` says `"iOS, Android"` while only iOS is live.**~~
       Resolved 2026-07-31 — both stores are live, so `"iOS, Android"` is now
       simply accurate. No change was needed.
-- [ ] **`aggregateRating`** — the only remaining Rich Results warning. Needs the
-      real App Store average and rating **count** (e.g. 5.0 from 3 ratings).
+- [ ] **`aggregateRating`** — the only remaining Rich Results warning.
+      **Ashok is supplying the average + count around 2026-08-07.** Needs both
+      numbers (e.g. 5.0 from 12 ratings) — the count is a required field.
+      Decide at that point whether the figure represents App Store, Google Play,
+      or a combined total: the schema has only one `aggregateRating`, so it
+      cannot silently mean both stores.
       Two conditions before adding it:
       1. Google expects the rating to be **visible on the page**, and the site
          currently displays no ratings anywhere. Adding the markup alone
@@ -68,6 +72,9 @@ the real listings; nothing points at `#faq` any more.
 
 - [x] `sitemap.xml` submitted to Google Search Console (Domain property,
       processed successfully, 5 pages discovered)
+- [x] Homepage re-indexing requested 2026-07-31, after both store links, the
+      updated FAQ Q1 and the pricing went live. No need to request again —
+      resubmitting does not jump the queue.
 - [ ] **Bing Webmaster Tools** — bing.com/webmasters → "Import from Google Search
       Console". Matters more than usual: ChatGPT's web search is Bing-backed,
       so it is a direct AEO channel.
