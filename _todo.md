@@ -47,10 +47,15 @@ Play URL will be: `https://play.google.com/store/apps/details?id=<package-name>`
 
 ## 2. Open decisions
 
-- [ ] **Subscription prices are missing from the schema.** The `MobileApplication`
-      JSON-LD has no `offers` block because the Monthly/Annual prices were never
-      supplied. `offers` (price + priceCurrency) is what makes app rich results
-      eligible in Google. Do **not** invent figures — add the real ones.
+- [x] ~~**Subscription prices missing from the schema.**~~ DONE 2026-07-30.
+      `offers` added to the `MobileApplication` JSON-LD as two `Offer` objects:
+      Monthly US$9.99 and Annual US$59.99, `category: subscription`.
+      The prices were also added to FAQ Q7 ("What Tickster subscription plans are
+      available?") — in **both** the visible answer and the `FAQPage` JSON-LD —
+      because Google requires structured data to reflect content visible on the
+      page. Wording is scoped to the US and notes that other regions are set by
+      the store, since Apple/Google price per storefront.
+      Rich Results Test should now flag only `aggregateRating`.
 - [ ] **`operatingSystem` says `"iOS, Android"`** while only iOS is live. Either
       leave it (Android is imminent) or narrow to `"iOS"` until Play clears.
 - [ ] **`aggregateRating`** — only add once real ratings exist. Fabricated ratings
