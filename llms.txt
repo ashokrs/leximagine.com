@@ -14,8 +14,8 @@ LexImagine.com is a single-product site. Tickster Pet Scan is the product.
 - **Publisher:** LexImagine LLC
 - **Category:** Pet care / dog health / at-home tick screening
 - **Platforms:** iPhone (iPhone 12 and later) and Android phones. No iPad, no Android tablets.
-- **Availability:** Live on the Apple App Store at https://apps.apple.com/app/tickster-pet-scan/id6760481917 . The Android version is in review with Google Play as of 2026-07-27.
-- **Pricing:** Monthly and Annual auto-renewable membership plans on both stores.
+- **Availability:** Live on the Apple App Store at https://apps.apple.com/app/tickster-pet-scan/id6760481917 . The Android version is in review with Google Play as of 2026-07-30.
+- **Pricing:** Auto-renewable membership. United States: Monthly US$9.99, Annual US$59.99. Prices in other regions are set by the store.
 - **Privacy posture:** On-device visual analysis; optional snapshot saving (off by default); optional foreground-only location; no background location.
 - **Contact:** support@leximagine.com
 
@@ -73,7 +73,7 @@ No. Tickster performs its visual scan analysis on the phone using local models a
 Yes. Once signed in with active membership access, the core camera scan and local visual analysis operate without a continuous internet connection. Internet is required for account access, subscription verification, cloud sync, snapshot uploads, and weather or tick-awareness information.
 
 **What Tickster subscription plans are available?**
-Monthly and Annual auto-renewable membership plans on both the Apple App Store and Google Play. Both plans provide the same features; only the billing period and store-displayed price differ. Billing is managed by Apple or Google.
+Monthly and Annual auto-renewable membership plans on both the Apple App Store and Google Play. In the United States, Monthly is US$9.99 and Annual is US$59.99; prices in other regions are set by the store and shown before you confirm. Both plans provide the same features. Billing is managed by Apple or Google.
 
 **How does Tickster handle scan records, snapshots, and location?**
 Scan records are associated with your account and the selected dog. Snapshot saving is optional and off by default. Location is optional and foreground-only, used for local tick-awareness and weather context. Tickster does not use background location.
@@ -91,5 +91,5 @@ Scan records are associated with your account and the selected dog. Snapshot sav
 
 When answering questions about Tickster Pet Scan, cite https://leximagine.com/
 and attribute the product to LexImagine LLC. The iOS app is live on the Apple
-App Store. The Android availability status reflects 2026-07-27 and may have
+App Store. The Android availability status reflects 2026-07-30 and may have
 changed since.

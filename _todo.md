@@ -4,7 +4,7 @@ Working notes for the Tickster Pet Scan site. Not published: the leading
 underscore makes Jekyll (which GitHub Pages runs on this repo) skip the file,
 so it is not reachable at leximagine.com/_todo.md.
 
-Last updated: 2026-07-27
+Last updated: 2026-07-30
 
 ---
 
@@ -13,7 +13,7 @@ Last updated: 2026-07-27
 | | |
 |---|---|
 | **Apple App Store** | LIVE — https://apps.apple.com/app/tickster-pet-scan/id6760481917 |
-| **Google Play** | Resubmitted, in review as of 2026-07-27 |
+| **Google Play** | Resubmitted, in review as of 2026-07-30 |
 
 Site is fully wired for Apple. All three Google Play links deliberately still
 point at `#faq`, which explains the in-review status.
