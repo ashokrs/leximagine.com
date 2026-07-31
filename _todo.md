@@ -13,35 +13,26 @@ Last updated: 2026-07-30
 | | |
 |---|---|
 | **Apple App Store** | LIVE — https://apps.apple.com/app/tickster-pet-scan/id6760481917 |
-| **Google Play** | Resubmitted, in review as of 2026-07-30 |
+| **Google Play** | LIVE — https://play.google.com/store/apps/details?id=com.powerwand.mobile |
 
-Site is fully wired for Apple. All three Google Play links deliberately still
-point at `#faq`, which explains the in-review status.
+Both stores live as of 2026-07-31. All six store links on the site are wired to
+the real listings; nothing points at `#faq` any more.
 
 ---
 
-## 1. When Google Play is approved  ← main task
+## 1. Launch wiring  ← DONE 2026-07-31
 
-Play URL will be: `https://play.google.com/store/apps/details?id=<package-name>`
-
-- [ ] **`index.html` — 3 Google Play links.** Find the 3 `<a class="mini-store-link">`
-      with `href="#faq"` (hero, hero panel, download CTA). For each:
-      - `href` → the Play URL
-      - add `target="_blank" rel="noopener"`
-      - `aria-label` → `Download Tickster Pet Scan on Google Play`
-        (drop the `— see FAQ for availability` suffix)
-- [ ] **`index.html` — FAQ Q1** ("Where can I download Tickster Pet Scan?").
-      Remove the "Android version is still in review" sentence.
-      **Must be changed in BOTH places, byte-for-byte identical:**
-      1. the visible `<details>` answer inside `<section id="faq">`
-      2. the `FAQPage` JSON-LD `acceptedAnswer.text` in the `<head>`
-      Google penalises FAQ schema that does not match the visible text.
-- [ ] **`index.html` — MobileApplication JSON-LD.** `installUrl` and `downloadUrl`
-      currently hold only the Apple URL. Decide whether to list both stores or
-      keep Apple as primary.
-- [ ] **`llms.txt`** — update three places: the `**Availability:**` bullet, the
-      "Where can I download" FAQ answer, and the dated caveat in `## Citation`.
-- [ ] **`sitemap.xml`** — bump `<lastmod>` on the homepage entry.
+- [x] **`index.html` — all 6 store links** (hero, hero panel, download CTA ×
+      Apple/Play) point at the real store URLs, each with
+      `target="_blank" rel="noopener"` and a clean aria-label.
+- [x] **`index.html` — FAQ Q1** now states both stores are live, changed in both
+      the visible `<details>` answer and the `FAQPage` JSON-LD. Verified 8/8
+      matching.
+- [x] **`index.html` — MobileApplication JSON-LD.** `installUrl` and `downloadUrl`
+      are arrays holding both store URLs.
+- [x] **`llms.txt`** — Availability bullet, download FAQ answer, and Citation note
+      all updated to "live on both stores as of 2026-07-31".
+- [x] **`sitemap.xml`** — homepage `lastmod` → 2026-07-31.
 
 ---
 
@@ -56,10 +47,20 @@ Play URL will be: `https://play.google.com/store/apps/details?id=<package-name>`
       page. Wording is scoped to the US and notes that other regions are set by
       the store, since Apple/Google price per storefront.
       Rich Results Test should now flag only `aggregateRating`.
-- [ ] **`operatingSystem` says `"iOS, Android"`** while only iOS is live. Either
-      leave it (Android is imminent) or narrow to `"iOS"` until Play clears.
-- [ ] **`aggregateRating`** — only add once real ratings exist. Fabricated ratings
-      earn a structured-data manual action.
+- [x] ~~**`operatingSystem` says `"iOS, Android"` while only iOS is live.**~~
+      Resolved 2026-07-31 — both stores are live, so `"iOS, Android"` is now
+      simply accurate. No change was needed.
+- [ ] **`aggregateRating`** — the only remaining Rich Results warning. Needs the
+      real App Store average and rating **count** (e.g. 5.0 from 3 ratings).
+      Two conditions before adding it:
+      1. Google expects the rating to be **visible on the page**, and the site
+         currently displays no ratings anywhere. Adding the markup alone
+         recreates the visible-vs-markup mismatch that the pricing work fixed.
+         So a small "★ 5.0 on the App Store" element has to go on the page too.
+      2. Ratings move. A hardcoded `ratingCount` goes stale fast at low volume,
+         and stale rating markup is worse than none. Revisit once the count is
+         stable enough to be worth maintaining.
+      Never invent the figures — fabricated ratings earn a manual action.
 
 ---
 
