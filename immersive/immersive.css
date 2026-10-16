@@ -49,6 +49,17 @@
   text-transform: uppercase;
 }
 
+/* Real video. preload="none" in the markup means nothing downloads until play. */
+.video-frame video {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  border-radius: var(--radius-md);
+  background: #1d1416;
+  object-fit: cover;
+}
+
 /* Brand subline under a product name, e.g. chummaNaachy / MAHKITPLAYS. */
 .portfolio-card .product-subline {
   margin: 6px 0 0;

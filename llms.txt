@@ -1,12 +1,17 @@
-# LexImagine — Tickster Pet Scan
+# LexImagine
 
-> Tickster Pet Scan is a guided mobile app from LexImagine LLC that helps dog
-> owners perform routine visual tick checks, record scan findings, and maintain
-> a care history for each dog. Visual scan analysis runs on the phone using
-> local models — camera images are not sent to an LLM API. It is a screening and
-> record-keeping tool, not a veterinary diagnosis.
+> LexImagine LLC builds two product lines. **Tickster Pet Scan** is a guided
+> mobile app that helps dog owners perform routine visual tick checks, record
+> scan findings, and maintain a care history for each dog. Visual scan analysis
+> runs on the phone using local models — camera images are not sent to an LLM
+> API. It is a screening and record-keeping tool, not a veterinary diagnosis.
+> **Immersive Shopping** turns grid-based online storefronts into spaces
+> shoppers can explore, in 2D in an ordinary web browser, with no headset.
 
-LexImagine.com is a single-product site. Tickster Pet Scan is the product.
+LexImagine.com hosts both: Tickster Pet Scan at https://leximagine.com/ and
+Immersive Shopping at https://leximagine.com/immersive/. The sections from
+"Key facts" to "Frequently asked questions" describe Tickster Pet Scan;
+Immersive Shopping has its own section below.
 
 ## Key facts
 
@@ -78,9 +83,27 @@ Monthly and Annual auto-renewable membership plans on both the Apple App Store a
 **How does Tickster handle scan records, snapshots, and location?**
 Scan records are associated with your account and the selected dog. Snapshot saving is optional and off by default. Location is optional and foreground-only, used for local tick-awareness and weather context. Tickster does not use background location.
 
+## Immersive Shopping
+
+LexImagine's second product line. It replaces the usual grid of product
+thumbnails with a space shoppers move through, so products are seen in context.
+
+- Runs in 2D in an ordinary web browser on phones and computers. No VR headset or special hardware.
+- Built with HTML, CSS, and JavaScript, backed by middleware and backend services.
+- Shareable from a website, Linktree, Instagram, or any social profile.
+- Contact: ashok@leximagine.com
+
+Portfolio (all in staging as of 2026-10-16):
+
+- **chummaNaachy MahkitPlays** — a parody immersive store where nothing is for sale; outputs shareable to social media.
+- **Sundaram Pottery** — a traditional selling website transformed into immersive shopping for high-quality pottery.
+- **Backdropsource** — an immersive drone browse through a massive expo-centre location.
+- **vaangungo.app** — an immersive shop for people with a few designer and luxury products to sell from a Linktree or Instagram link. Pay as you go.
+
 ## Pages
 
-- [Home](https://leximagine.com/): Product overview, what Tickster does, at-home scan routine guidance, and the full FAQ.
+- [Home](https://leximagine.com/): Tickster Pet Scan overview, what it does, at-home scan routine guidance, and the full FAQ.
+- [Immersive Shopping](https://leximagine.com/immersive/): Immersive Shopping overview, portfolio with walkthrough video, how it works, FAQ, and contact.
 - [FAQ](https://leximagine.com/#faq): Answers on downloading, scanning technique, on-device processing, offline use, subscriptions, and data handling.
 - [Support](https://leximagine.com/support/): How to contact LexImagine support and what details to include.
 - [Privacy Policy](https://leximagine.com/privacy/): What Tickster collects, camera/location/photo use, sharing, security, retention, and user choices.
