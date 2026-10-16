@@ -127,6 +127,9 @@
                   "description": "An immersive browse, captured by drone, through a massive expo-centre location.",
                   "creator": {
                     "@id": "https://leximagine.com/#organization"
+                  },
+                  "video": {
+                    "@id": "https://leximagine.com/immersive/#backdropsource-video"
                   }
                 }
               },
@@ -166,6 +169,19 @@
             "uploadDate": "2026-10-16",
             "duration": "PT1M29S",
             "contentUrl": "https://leximagine.com/immersive/media/sundarampottery-walkthrough-720p.mp4",
+            "publisher": {
+              "@id": "https://leximagine.com/#organization"
+            }
+          },
+          {
+            "@type": "VideoObject",
+            "@id": "https://leximagine.com/immersive/#backdropsource-video",
+            "name": "Backdropsource walkthrough",
+            "description": "An immersive browse of the Backdropsource expo-centre location: an aerial flyover, then a low drone hover along the backdrop displays.",
+            "thumbnailUrl": "https://leximagine.com/immersive/media/backdropsource-poster.jpg",
+            "uploadDate": "2026-10-16",
+            "duration": "PT2M",
+            "contentUrl": "https://leximagine.com/immersive/media/backdropsource-walkthrough-720p.mp4",
             "publisher": {
               "@id": "https://leximagine.com/#organization"
             }
@@ -374,7 +390,20 @@
             </article>
 
             <article class="content-card portfolio-card">
-              <div class="video-poster" role="img" aria-label="Video placeholder for Backdropsource"><span>Video coming soon</span></div>
+              <div class="video-frame">
+                <video
+                  controls
+                  preload="none"
+                  playsinline
+                  width="1280"
+                  height="720"
+                  poster="./media/backdropsource-poster.jpg"
+                  aria-label="Backdropsource walkthrough: an aerial flyover of the expo-centre location, then a low drone hover along the backdrop displays"
+                >
+                  <source src="./media/backdropsource-walkthrough-720p.mp4?v=20261016" type="video/mp4" />
+                  Your browser can't play this video.
+                </video>
+              </div>
               <span class="portfolio-tag">Venue</span>
               <h3>Backdropsource</h3>
               <p>An immersive browse, captured by drone, through a massive expo-centre location.</p>
