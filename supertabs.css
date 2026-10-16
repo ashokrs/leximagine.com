@@ -1,0 +1,65 @@
+/* Supertabs: switch between LexImagine's product lines.
+   Lives in its own file, loaded only by index.html and immersive/index.html,
+   so styles.css (shared with Tickster's store-registered pages) never changes.
+   The strip sits above the sticky header rather than inside it, so the header
+   markup and CSS stay exactly as they were. */
+
+.supertabs {
+  display: flex;
+  justify-content: flex-end;
+  gap: 6px;
+  margin: 0 8px 10px;
+}
+
+.supertab {
+  flex: 0 1 auto;
+  padding: 7px 16px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: rgba(255, 252, 247, 0.72);
+  color: var(--muted);
+  font-family: 'Syne', sans-serif;
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: color 0.2s ease, border-color 0.2s ease, background 0.2s ease;
+}
+
+.supertab:hover {
+  border-color: rgba(201, 78, 126, 0.35);
+  color: var(--ink);
+}
+
+.supertab:focus-visible {
+  outline: 2px solid var(--accent-strong);
+  outline-offset: 2px;
+}
+
+.supertab[aria-current='page'] {
+  border-color: transparent;
+  background: linear-gradient(135deg, #cb537f, #e28a66);
+  color: #fff;
+  box-shadow: 0 8px 18px rgba(201, 78, 126, 0.18);
+}
+
+/* Phones: two equal halves, always visible (never inside the hamburger). */
+@media (max-width: 760px) {
+  .supertabs {
+    margin: 0 0 10px;
+  }
+
+  .supertab {
+    flex: 1 1 0;
+    padding: 9px 8px;
+    font-size: 0.8rem;
+    text-align: center;
+  }
+}
+
+@media (max-width: 360px) {
+  .supertab {
+    font-size: 0.72rem;
+  }
+}
