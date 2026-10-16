@@ -4,7 +4,7 @@ Working notes for the Tickster Pet Scan site. Not published: the leading
 underscore makes Jekyll (which GitHub Pages runs on this repo) skip the file,
 so it is not reachable at leximagine.com/_todo.md.
 
-Last updated: 2026-07-30
+Last updated: 2026-10-16
 
 ---
 
@@ -35,6 +35,24 @@ the real listings; nothing points at `#faq` any more.
 - [x] **`sitemap.xml`** — homepage `lastmod` → 2026-07-31.
 
 ---
+
+## 1b. Immersive Shopping launch  ← NEW 2026-10-16
+
+Phases 0–4 are committed locally (see `_plan-immersive-shopping.md`). After push:
+
+- [ ] `git push origin main`, wait for the Pages build, then confirm
+      `https://leximagine.com/immersive/` returns 200 and the 6 Tickster URLs are unchanged
+- [ ] Rich Results Test on `/immersive/` (FAQPage, VideoObject)
+- [ ] GSC → URL Inspection → `https://leximagine.com/immersive/` → Request Indexing
+- [ ] Videos for Sundaram Pottery, Backdropsource, vaangungo.app → transcode to 720p,
+      add a `VideoObject` each, swap out the "Video coming soon" posters
+- [ ] Link each product site from its card once its immersive build leaves staging
+- [ ] Homepage eyebrow "One focused product" and the About line "Tickster is the
+      product" now contradict the second supertab — revisit
+- [ ] Optional: move the walkthrough video to YouTube for discovery; self-hosted
+      10 MB copy works fine meanwhile
+- Never commit the masters in `immersive/media/` (`*-1080p.mp4`, `*-thumbnail.png`);
+  they are in `.gitignore`.
 
 ## 2. Open decisions
 

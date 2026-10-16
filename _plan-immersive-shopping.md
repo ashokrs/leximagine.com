@@ -1,7 +1,7 @@
 # Plan — "Immersive Shopping" supertab
 
 Not published: the leading underscore makes Jekyll skip this file.
-Created: 2026-10-16 · Status: **awaiting approval — no code changed yet**
+Created: 2026-10-16 · Status: **phases 0–4 committed locally 2026-10-16 (35423bb, f5bdc84, 63f34cd); not pushed.** Phase 3 deviation: the supertab strip sits just above `<header>` instead of inside it, so the header block stays byte-identical.
 
 ---
 
