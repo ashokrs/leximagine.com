@@ -9,12 +9,20 @@
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='72' height='24' viewBox='0 0 72 24'%3E%3Cg transform='rotate%28-6 16 16%29'%3E%3Cpolygon points='8.5,10 23.5,10 25,22 7,22' fill='%23dc7a9c' stroke='%23dc7a9c' stroke-width='1.2' stroke-linejoin='round'/%3E%3Cpath d='M13 10V8.6a3 3 0 0 1 6 0V10' fill='none' stroke='%23dc7a9c' stroke-width='1.6' stroke-linecap='round'/%3E%3Cline x1='8.6' y1='12.6' x2='23.4' y2='12.6' stroke='%23fff' stroke-opacity='.6' stroke-width='1'/%3E%3C/g%3E%3Cg transform='rotate%288 50 16%29'%3E%3Cpolygon points='42.5,10 57.5,10 59,22 41,22' fill='%23e28a66' stroke='%23e28a66' stroke-width='1.2' stroke-linejoin='round'/%3E%3Cpath d='M47 10V8.6a3 3 0 0 1 6 0V10' fill='none' stroke='%23e28a66' stroke-width='1.6' stroke-linecap='round'/%3E%3Cline x1='42.6' y1='12.6' x2='57.4' y2='12.6' stroke='%23fff' stroke-opacity='.6' stroke-width='1'/%3E%3C/g%3E%3C/svg%3E");
 }
 
-.immersive-hero .section-heading {
-  max-width: 900px;
+/* Headings run the full width on this page instead of wrapping at the shared
+   860px / 740px caps. Body text keeps a readable measure. */
+.section-heading,
+.compact-heading {
+  max-width: none;
 }
 
+.section-heading p {
+  max-width: 860px;
+}
+
+/* Hero headline: same size as the section h2s (the h2 rule in styles.css). */
 .immersive-hero h1 {
-  font-size: clamp(2.2rem, 5.4vw, 4rem);
+  font-size: clamp(1.75rem, 8vw, 2.55rem);
   line-height: 0.98;
 }
 
