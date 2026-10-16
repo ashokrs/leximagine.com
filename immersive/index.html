@@ -112,6 +112,9 @@
                   "description": "A traditional selling website transformed into an immersive shopping experience for high-quality pottery.",
                   "creator": {
                     "@id": "https://leximagine.com/#organization"
+                  },
+                  "video": {
+                    "@id": "https://leximagine.com/immersive/#sundarampottery-video"
                   }
                 }
               },
@@ -150,6 +153,19 @@
             "uploadDate": "2026-10-16",
             "duration": "PT4M55S",
             "contentUrl": "https://leximagine.com/immersive/media/chummanaachy-walkthrough-720p.mp4",
+            "publisher": {
+              "@id": "https://leximagine.com/#organization"
+            }
+          },
+          {
+            "@type": "VideoObject",
+            "@id": "https://leximagine.com/immersive/#sundarampottery-video",
+            "name": "Sundaram Pottery walkthrough",
+            "description": "A walkthrough of the Sundaram Pottery immersive storefront: arriving at the parking lot, entering the gallery and studio, and a conversation with Sundari, the shop's assistant.",
+            "thumbnailUrl": "https://leximagine.com/immersive/media/sundarampottery-poster.jpg",
+            "uploadDate": "2026-10-16",
+            "duration": "PT1M29S",
+            "contentUrl": "https://leximagine.com/immersive/media/sundarampottery-walkthrough-720p.mp4",
             "publisher": {
               "@id": "https://leximagine.com/#organization"
             }
@@ -336,7 +352,20 @@
             </article>
 
             <article class="content-card portfolio-card">
-              <div class="video-poster" role="img" aria-label="Video placeholder for Sundaram Pottery"><span>Video coming soon</span></div>
+              <div class="video-frame">
+                <video
+                  controls
+                  preload="none"
+                  playsinline
+                  width="1280"
+                  height="720"
+                  poster="./media/sundarampottery-poster.jpg"
+                  aria-label="Sundaram Pottery walkthrough: from the parking lot through the front doors of the gallery and studio, including a conversation with Sundari, the shop's assistant"
+                >
+                  <source src="./media/sundarampottery-walkthrough-720p.mp4?v=20261016" type="video/mp4" />
+                  Your browser can't play this video.
+                </video>
+              </div>
               <span class="portfolio-tag">Merchant storefront</span>
               <h3>Sundaram Pottery</h3>
               <p>
