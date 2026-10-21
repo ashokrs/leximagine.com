@@ -166,7 +166,7 @@ After each phase: run the hash check, and confirm the four store URLs return
 | C | Backdropsource | https://www.backdropsource.com (200 OK) | Immersive drone browse of a massive expo-centre location |
 | D | vaangungo.app | https://vaangungo.app (**no response 2026-10-16**) | Immersive shop linked from Linktree / Instagram, for individuals with a few designer and luxury items to sell. **Pay as you go** |
 
-- Contact: `ashok@leximagine.com`
+- Contact: `support@leximagine.com` (changed from ashok@ on 2026-10-21)
 - Videos + posters: later. Build with poster placeholders.
 - Headline + FAQ: Claude drafts, Ashok reviews.
 

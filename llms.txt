@@ -91,7 +91,7 @@ thumbnails with a space shoppers move through, so products are seen in context.
 - Runs in 2D in an ordinary web browser on phones and computers. No VR headset or special hardware.
 - Built with HTML, CSS, and JavaScript, backed by middleware and backend services.
 - Shareable from a website, Linktree, Instagram, or any social profile.
-- Contact: ashok@leximagine.com
+- Contact: support@leximagine.com
 
 Portfolio (all in staging as of 2026-10-16):
 
