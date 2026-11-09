@@ -47,7 +47,7 @@
     <!-- Shared stylesheet, read-only reuse. Never edit it for this page. -->
     <link rel="stylesheet" href="../styles.css?v=20260727-store" />
     <link rel="stylesheet" href="../supertabs.css?v=20261016" />
-    <link rel="stylesheet" href="./immersive.css?v=20261021-dm2" />
+    <link rel="stylesheet" href="./immersive.css?v=20261109-vng" />
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -143,7 +143,10 @@
                   "creator": {
                     "@id": "https://leximagine.com/#organization"
                   },
-                  "alternateName": "Vaangungo"
+                  "alternateName": "Vaangungo",
+                  "video": {
+                    "@id": "https://leximagine.com/immersive/#vaangungo-video"
+                  }
                 }
               }
             ]
@@ -183,6 +186,19 @@
             "uploadDate": "2026-10-16",
             "duration": "PT2M",
             "contentUrl": "https://leximagine.com/immersive/media/backdropsource-walkthrough-720p.mp4",
+            "publisher": {
+              "@id": "https://leximagine.com/#organization"
+            }
+          },
+          {
+            "@type": "VideoObject",
+            "@id": "https://leximagine.com/immersive/#vaangungo-video",
+            "name": "VAANG*N*GO walkthrough: Fernando Fula Art Gallery",
+            "description": "A walkthrough of a VAANG*N*GO immersive gallery: browsing paintings by Fernando Fula, asking the vai assistant about a piece, and previewing a painting on your own wall before buying.",
+            "thumbnailUrl": "https://leximagine.com/immersive/media/vaangungo-poster.jpg",
+            "uploadDate": "2026-11-09",
+            "duration": "PT52S",
+            "contentUrl": "https://leximagine.com/immersive/media/vaangungo-walkthrough.mp4",
             "publisher": {
               "@id": "https://leximagine.com/#organization"
             }
@@ -338,7 +354,7 @@
           <div class="section-heading">
             <p class="eyebrow">Portfolio</p>
             <h2>Immersive Shopping in practice</h2>
-            <p>Each project is currently in staging. Videos for the rest are on the way.</p>
+            <p>Each project is currently in staging.</p>
           </div>
 
           <div class="portfolio-grid">
@@ -411,7 +427,20 @@
             </article>
 
             <article class="content-card portfolio-card">
-              <div class="video-poster" role="img" aria-label="Video placeholder for Vaangungo"><span>Video coming soon</span></div>
+              <div class="video-frame is-16x10">
+                <video
+                  controls
+                  preload="none"
+                  playsinline
+                  width="1280"
+                  height="800"
+                  poster="./media/vaangungo-poster.jpg"
+                  aria-label="Vaangungo walkthrough: browsing the Fernando Fula Art Gallery, asking the vai assistant about a painting, and previewing it on your own wall"
+                >
+                  <source src="./media/vaangungo-walkthrough.mp4?v=20261109" type="video/mp4" />
+                  Your browser can't play this video.
+                </video>
+              </div>
               <span class="portfolio-tag">Pay as you go</span>
               <h3 class="product-wordmark">
                 <img src="./media/vaangungo-logo.png" width="46" height="40" alt="" />

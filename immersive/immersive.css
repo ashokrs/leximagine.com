@@ -126,6 +126,12 @@
   border: 0;
 }
 
+/* VAANG*N*GO's recording is 1280x800 (16:10). Give it a matching frame so
+   the whole picture shows instead of being cropped to 16:9. */
+.video-frame.is-16x10 video {
+  aspect-ratio: 16 / 10;
+}
+
 /* Brand subline under a product name, e.g. chummaNaachy / MAHKITPLAYS. */
 .portfolio-card .product-subline {
   margin: 6px 0 0;

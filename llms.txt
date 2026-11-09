@@ -103,7 +103,7 @@ Portfolio (all in staging as of 2026-10-16):
 ## Pages
 
 - [Home](https://leximagine.com/): Tickster Pet Scan overview, what it does, at-home scan routine guidance, and the full FAQ.
-- [Immersive Shopping](https://leximagine.com/immersive/): Immersive Shopping overview, portfolio with walkthrough video, how it works, FAQ, and contact.
+- [Immersive Shopping](https://leximagine.com/immersive/): Immersive Shopping overview, portfolio with a walkthrough video for each project, how it works, FAQ, and contact.
 - [FAQ](https://leximagine.com/#faq): Answers on downloading, scanning technique, on-device processing, offline use, subscriptions, and data handling.
 - [Support](https://leximagine.com/support/): How to contact LexImagine support and what details to include.
 - [Privacy Policy](https://leximagine.com/privacy/): What Tickster collects, camera/location/photo use, sharing, security, retention, and user choices.
